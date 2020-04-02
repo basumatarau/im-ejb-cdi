@@ -18,8 +18,13 @@
   <dependencies>
     <dependency>
       <groupId>com.basumatarau.training</groupId>
-      <artifactId>ejbs</artifactId>
+      <artifactId>service-ejbs</artifactId>
       <type>ejb</type>
+    </dependency>
+    <dependency>
+      <groupId>com.basumatarau.training</groupId>
+      <artifactId>persistence</artifactId>
+      <type>jar</type>
     </dependency>
     <dependency>
       <groupId>com.basumatarau.training</groupId>

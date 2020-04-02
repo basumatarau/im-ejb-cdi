@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.basumatarau.training</groupId>
+        <artifactId>ejbs</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>service-ejbs</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <packaging>ejb</packaging>
+
+    <name>service beans</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.basumatarau.training</groupId>
+            <artifactId>primary-source</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.basumatarau.training</groupId>
+            <artifactId>logging</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.basumatarau.training</groupId>
+            <artifactId>persistence</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ejb-plugin</artifactId>
+                <configuration>
+                    <!--<generateClient>true</generateClient>-->
+                    <ejbVersion>3.2</ejbVersion>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

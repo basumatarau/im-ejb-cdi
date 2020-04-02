@@ -33,7 +33,7 @@
         </dependency>
         <dependency>
             <groupId>com.basumatarau.training</groupId>
-            <artifactId>ejbs</artifactId>
+            <artifactId>service-ejbs</artifactId>
             <type>ejb</type>
             <scope>provided</scope>
         </dependency>

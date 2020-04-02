@@ -29,6 +29,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
     <java.version>1.8</java.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -54,9 +55,15 @@
       </dependency>
       <dependency>
         <groupId>com.basumatarau.training</groupId>
-        <artifactId>ejbs</artifactId>
+        <artifactId>service-ejbs</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <type>ejb</type>
+      </dependency>
+      <dependency>
+        <groupId>com.basumatarau.training</groupId>
+        <artifactId>persistence</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <type>jar</type>
       </dependency>
       <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
       <dependency>
@@ -114,6 +121,11 @@
         <plugin>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>3.1.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>build-helper-maven-plugin</artifactId>
+          <version>${build-helper-maven-plugin.version}</version>
         </plugin>
       </plugins>
     </pluginManagement>
