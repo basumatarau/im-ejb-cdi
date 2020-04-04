@@ -20,11 +20,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.basumatarau.training</groupId>
-            <artifactId>primary-source</artifactId>
-            <scope>provided</scope>
-        </dependency>
         <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
         <dependency>
             <groupId>javax</groupId>
@@ -36,6 +31,19 @@
             <artifactId>service-ejbs</artifactId>
             <type>ejb</type>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.basumatarau.training</groupId>
+            <artifactId>primary-source</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.basumatarau.training</groupId>
+            <artifactId>logging</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.basumatarau.training</groupId>
+            <artifactId>persistence</artifactId>
         </dependency>
     </dependencies>
 

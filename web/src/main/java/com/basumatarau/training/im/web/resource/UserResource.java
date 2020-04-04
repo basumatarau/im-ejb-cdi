@@ -1,6 +1,7 @@
 package com.basumatarau.training.im.web.resource;
 
 import com.basumatarau.training.im.ejb.HelloEjbLocal;
+import com.basumatarau.training.im.ejb.repository.UserRepository;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -25,5 +26,11 @@ public class UserResource {
     @Path("/stub")
     public Response stub() {
         return Response.ok().entity("greetings!").build();
+    }
+
+    @GET
+    @Path("/persistence")
+    public Response pers(){
+        return Response.ok().entity(helloEjbLocal.getSomeUser()).build();
     }
 }
