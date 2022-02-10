@@ -16,7 +16,7 @@
     <name>domain objects and persistence mapping</name>
 
     <properties>
-        <hibernate.version>5.4.12.Final</hibernate.version>
+        <hibernate.version>5.4.24.Final</hibernate.version>
         <spring-data-jpa.version>2.2.5.RELEASE</spring-data-jpa.version>
         <lombok.version>1.18.12</lombok.version>
     </properties>
